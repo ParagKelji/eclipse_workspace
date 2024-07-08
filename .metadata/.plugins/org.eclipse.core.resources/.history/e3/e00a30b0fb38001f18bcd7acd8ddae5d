@@ -1,0 +1,12 @@
+package com.parag;
+
+public class ConnectToCassandra {
+
+	public static void main(String[] args) {
+		DataAPIClient client = new DataAPIClient("YOUR_TOKEN");
+	    Database db = client.getDatabase("https://990d536e-0e90-4057-b8fb-5271a5323bea-us-east1.apps.astra.datastax.com");
+	    System.out.println("Connected to AstraDB " + db.listCollectionNames());
+	  }
+	}
+
+}

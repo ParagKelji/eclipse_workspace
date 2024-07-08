@@ -1,0 +1,16 @@
+package leetcode;
+
+public class HIndex {
+	
+	public static int calculateHIndex(int[] citations) {
+		int hIndex = 0;
+		
+		return hIndex;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class ArraysPermutation {
+
+	public static void main(String[] args) {
+		int [] arr1 = new int[] {1, 2};
+	}
+	
+	public static void getPermutations(int[] arr) {
+		int [] arr1 = new int[] {1, 2};
+	}
+}

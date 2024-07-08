@@ -1,0 +1,43 @@
+
+public class LargestOddNumberInString {
+
+	public static void main(String[] args) {
+		String str = "This string of numbers 1&23&35456";
+		System.out.println("Largest odd number: " + largestOddNumber(str));
+	}
+	
+	public static String largestOddNumber(String str) {
+		String largest = "";
+		if (str == null || !str.matches(".*\\d.*")) {
+			return null;
+		}
+		String currLargest = "";
+		int num = 0;
+		for (int i = 0; i < str.length(); i++) {
+			Character currChar = str.charAt(i);
+			if ( !Character.isDigit(currChar) ) {
+				continue;
+			}
+			currLargest = str.substring(i);
+			num = Integer.parseInt(currLargest);
+			if (num % 2 != 0) {
+				largest = currLargest;
+				break;
+			}
+			Character nextChar = str.charAt(i + 1);
+			if ( Character.isDigit(currChar) ) {
+				//continue;
+			}
+			if (num % 2 != 0) {
+				largest = str.substring(i, i + 2);
+				break;
+			}
+			if (currChar.charValue() % 2 != 0) {
+				largest = str.substring(i);
+				break;
+			}
+		}
+		return largest;
+	}
+
+}

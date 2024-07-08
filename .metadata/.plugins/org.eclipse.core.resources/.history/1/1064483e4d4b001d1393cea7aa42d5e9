@@ -1,0 +1,14 @@
+package leetcode;
+
+public class LongestCommonPrefix {
+	public String longestCommonPrefix(String[] strs) {
+        String lCPre = "";
+        
+        return lCPre;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

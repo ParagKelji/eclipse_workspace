@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ear-1.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="root.project-ejbs-1.0.jar" deploy-path="/" handle="module:/resource/ejbs/ejbs">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.datastax.astra-astra-db-java-1.0.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/datastax/astra/astra-db-java/1.0.0/astra-db-java-1.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.datastax.astra-astra-sdk-devops-1.2.7.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/datastax/astra/astra-sdk-devops/1.2.7/astra-sdk-devops-1.2.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.httpcomponents.client5-httpclient5-5.3.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/client5/httpclient5/5.3/httpclient5-5.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.httpcomponents.core5-httpcore5-5.2.4.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.httpcomponents.core5-httpcore5-h2-5.2.4.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.fasterxml.uuid-java-uuid-generator-5.0.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/fasterxml/uuid/java-uuid-generator/5.0.0/java-uuid-generator-5.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.slf4j-slf4j-api-2.0.9.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.evanlennick-retry4j-0.15.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/evanlennick/retry4j/0.15.0/retry4j-0.15.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.projectlombok-lombok-1.18.32.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.fasterxml.jackson.core-jackson-core-2.17.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.fasterxml.jackson.core-jackson-annotations-2.17.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.fasterxml.jackson.core-jackson-databind-2.17.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="net.bytebuddy-byte-buddy-1.14.9.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.fasterxml.jackson.datatype-jackson-datatype-jsr310-2.17.0.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.0/jackson-datatype-jsr310-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="root.project.servlets-servlet-1.0.war" deploy-path="/" handle="module:/resource/servlet/servlet">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="root.project-primary-source-1.0.jar" deploy-path="/" handle="module:/resource/primary-source/primary-source">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="root.project.projects-logging-1.0.jar" deploy-path="/" handle="module:/resource/logging/logging">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

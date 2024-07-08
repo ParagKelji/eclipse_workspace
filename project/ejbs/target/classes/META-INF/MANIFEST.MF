@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Class-Path: primary-source-1.0.jar logging-1.0.jar slf4j-api-1.7.21.jar 
+ astra-db-java-1.0.0.jar astra-sdk-devops-1.2.7.jar httpclient5-5.3.jar 
+ httpcore5-5.2.4.jar httpcore5-h2-5.2.4.jar java-uuid-generator-5.0.0.ja
+ r retry4j-0.15.0.jar lombok-1.18.32.jar jackson-core-2.17.0.jar jackson
+ -annotations-2.17.0.jar jackson-databind-2.17.0.jar byte-buddy-1.14.9.j
+ ar jackson-datatype-jsr310-2.17.0.jar
+Created-By: Maven Integration for Eclipse
+

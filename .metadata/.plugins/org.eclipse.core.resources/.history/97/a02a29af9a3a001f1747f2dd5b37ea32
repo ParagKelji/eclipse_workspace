@@ -1,0 +1,30 @@
+package leetcode;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HIndex {
+	
+	public static int calculateHIndex(int[] citations) {
+		int hIndex = 0;
+		if ( citations == null || citations.length == 0 ) {
+			return hIndex;
+		}
+		Map<Integer, Integer> citationMap = new HashMap<Integer, Integer>();
+		for ( int i = 0; i < citations.length; i++ ) {
+			if ( citationMap.containsKey(citations[i]) ) {
+				citationMap.put(citations[i], citationMap.get(citations[i]) + 1);
+			} else {
+				citationMap.put(citations[i], 1);
+			}
+		}
+		citationMap.entrySet().stream().map()
+		return hIndex;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

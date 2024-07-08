@@ -1,0 +1,54 @@
+package com.f8.test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LambdaEx {
+	
+	interface Sayable {
+	    public String say(String name);
+	}
+	
+	class Person {
+	    String name;
+	    String number;
+	    
+	    public Person(String name) {
+	        this.name = name;
+	    }
+	    
+	    public String getName() {
+	        return name;
+	    }
+	    
+	    public String getNumber() {
+	        return number;
+	    }
+	    
+	    public void setNumber(String number) {
+	        this.number = number;
+	    }
+	    
+	    public Person(String name, String number) {
+	        this.name = name;
+	        this.number = number;
+	    }
+	}
+	
+	public static void main(String[] args) {
+		// Lambda expression with single parameter.
+        Sayable s1=(name)->{
+            return "Hello, " + name;
+        };
+        System.out.println(s1.say("Sonoo"));
+        // You can omit function parentheses
+        Sayable s2= name -> {
+            return "Hello, " + name;
+        };
+        System.out.println(s2.say("Sonoo"));
+        Map<String, Integer> nameMap = new HashMap<>();
+        Integer value = nameMap.computeIfAbsent("Neetuli", s -> 404);
+        System.out.println(value);
+	}
+
+}

@@ -1,0 +1,26 @@
+let name = 'Parag';
+let isApproved = true;
+let person = {
+	firstName : 'Parag',
+	lastName : 'Kelji',
+	age : 30
+}
+person['middleName'] = 'Radhakrishna';
+console.log(person);
+
+let selectedColors = ['Red', 'Blue', 'Green'];
+selectedColors[3] = 'Yellow';
+selectedColors[4] = 'Cyan';
+selectedColors[5] = 'Magenta';
+console.log(selectedColors);
+
+function greet(name, lastName) {
+	console.log(`Hello ${name} ${lastName}`);
+}
+greet(name);
+greet('Neeta');
+greet(person.lastName);
+
+function square(number) {
+	return number * number;
+}

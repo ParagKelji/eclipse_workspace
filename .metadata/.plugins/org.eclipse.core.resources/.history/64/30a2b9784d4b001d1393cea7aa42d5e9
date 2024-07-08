@@ -1,0 +1,13 @@
+package leetcode;
+
+public class LongestCommonPrefix {
+	public String longestCommonPrefix(String[] strs) {
+        String lCPre = "";
+        
+        return lCPre;
+    }
+	public static void main(String[] args) {
+		String[] strs = ["flower","flow","flight"];
+	}
+
+}

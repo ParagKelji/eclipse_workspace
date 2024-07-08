@@ -1,0 +1,18 @@
+
+public class CustomStack {
+	
+	int length = 0;
+	Node head;
+	Node top;
+	Node bottom;
+	
+	class Node {
+		int value;
+		Node next;
+		public Node(int value) {
+			this.value = value;
+			this.next = null;
+		}
+	}
+	
+}

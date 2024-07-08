@@ -1,0 +1,18 @@
+package leetcode;
+
+public class MajorityElement {
+
+	public int majorityElement(int[] nums) {
+		int count = 0;
+		if ( nums == null || num.length <= 0 ) {
+			retrun null;
+		}
+		
+		return count;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

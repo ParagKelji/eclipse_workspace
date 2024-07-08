@@ -1,0 +1,30 @@
+package leetcode;
+
+public class JumpGame_1 {
+	
+	public boolean canJump(int[] nums) {
+        boolean isJumpable = false;
+        if ( nums == null || nums.length <= 1 ) {
+			return isJumpable;
+		}
+        int end = nums.length - 1;
+        int firstJumpMax = nums[0];
+        if ( firstJumpMax <= 0 ) {
+			return isJumpable;
+		}
+        if ( firstJumpMax >= end ) {
+        	
+        }
+        int jumpDistnace = 0;
+        for ( int i = 1; i < firstJumpMax; i++ ) {
+        	
+        }
+        return isJumpable;
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

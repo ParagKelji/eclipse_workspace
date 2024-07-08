@@ -1,0 +1,10 @@
+package com.parag;
+
+public class ConnectToCassandra {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

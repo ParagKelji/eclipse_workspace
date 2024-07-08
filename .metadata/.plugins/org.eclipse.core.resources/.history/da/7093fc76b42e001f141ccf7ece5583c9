@@ -1,0 +1,123 @@
+package com.f8.test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
+
+public class LambdaEx {
+	
+	interface Sayable {
+	    public String say(String name);
+	}
+	
+	class Person {
+	    String name;
+	    int number;
+	    
+	    public Person(String name) {
+	        this.name = name;
+	    }
+	    
+	    public String getName() {
+	        return name;
+	    }
+	    
+	    public int getNumber() {
+	        return number;
+	    }
+	    
+	    public void setNumber(int number) {
+	        this.number = number;
+	    }
+	    
+	    public Person(String name, int number) {
+	        this.name = name;
+	        this.number = number;
+	    }
+	    
+	    @Override
+	    public String toString() {
+	    	if ( name == null || name.contains("Not Found") ) {
+	    		return "Error: " + name + ", Error Code: " + number;
+	    	}
+	        return "Person [name=" + name + ", number=" + number + "]";
+	    }
+	}
+	class Product {
+	    int id;
+	    String name;
+	    Float price;
+	    public Product(int id, String name, Float price) {
+	        super();
+	        this.id = id;
+	        this.name = name;
+	        this.price = price;
+	    }
+	}
+	
+	public static void main(String[] args) {
+		// Lambda expression with single parameter.
+        LambdaEx lambdaEx = new LambdaEx();
+        
+		Sayable s1=(name)->{
+            return "Hello, " + name;
+        };
+        System.out.println(s1.say("Sonoo"));
+        // You can omit function parentheses
+        Sayable s2= name -> {
+            return "Hello, " + name;
+        };
+        System.out.println(s2.say("Sonoo"));
+        Map<String, LambdaEx.Person> nameMap = new HashMap<>();
+        LambdaEx.Person value = nameMap.computeIfAbsent("Neetuli", s -> {
+			return lambdaEx.new Person("Person Not Found", 404);
+        });
+        System.out.println(value);
+        
+        List<Product> list=new ArrayList<Product>();
+
+        //Adding Products
+        list.add(lambdaEx.new Product(1,"HP Laptop",25000f));
+        list.add(lambdaEx.new Product(3,"Keyboard",300f));
+        list.add(lambdaEx.new Product(2,"Dell Mouse",150f));
+		list.add(lambdaEx.new Product(4,"Samsung A5",17000f));
+        list.add(lambdaEx.new Product(5,"Iphone 6S",65000f));
+        list.add(lambdaEx.new Product(7,"Sony Xperia",25000f));
+        list.add(lambdaEx.new Product(8,"Nokia Lumia",15000f));
+        list.add(lambdaEx.new Product(9,"Redmi4 ",26000f));
+        list.add(lambdaEx.new Product(6,"Lenevo Vibe",19000f));
+
+        System.out.println("Sorting on the basis of name...");
+
+        // implementing lambda expression
+        Collections.sort(list,(p1,p2)-> {
+        	return p1.name.compareTo(p2.name);
+        });
+        for ( Product p:list ) {
+        	System.out.println(p.id + " " + p.name + " " + p.price);
+        }
+        
+        System.out.println("------------------------------------------");
+        System.out.println("Sorting on the basis of price...");
+
+        // implementing lambda expression
+        Collections.sort(list,(p1,p2)-> {
+        	return p1.price.compareTo(p2.price);
+        });
+        for ( Product p:list ) {
+        	System.out.println(p.id + " " + p.name + " " + p.price);
+        }
+        System.out.println("------------------------------------------");
+        // using lambda to filter data
+        Stream<Product> filtered_data = list.stream().filter(p -> p.price > 20000);
+
+        // using lambda to iterate through collection
+        filtered_data.forEach(
+        	product -> System.out.println(product.id + " " + product.name + ": " + product.price)
+        );
+	}
+
+}

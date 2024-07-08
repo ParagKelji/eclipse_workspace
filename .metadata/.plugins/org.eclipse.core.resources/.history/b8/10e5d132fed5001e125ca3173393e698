@@ -1,0 +1,13 @@
+let name = 'Parag';
+let isApproved = true;
+let person = {
+	firstName : 'Parag',
+	lastName : 'Kelji',
+	age : 30
+}
+person['middleName'] = 'Radhakrishna';
+console.log(person);
+
+let selectedColors = ['Red', 'Blue'];
+
+console.log(selectedColors);

@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArraysPermutation {
+
+	public static void main(String[] args) {
+		int [] arr1 = new int[] {1, 2};
+	}
+	
+	public static void getPermutations(int[] arr) {
+		List<int[]> permutations = new ArrayList()<>();
+		//getPermutations(arr, 0, permutations);
+		if ( arr == null || arr.length == 0 ) {
+			return;
+		}
+		int j = 1;
+		for (int i = 0; i < arr.length; i++) {
+			int [] arrTemp = arr.clone();
+			swap(arrTemp, i, j);
+			j++;
+			//getPermutations(arrTemp);
+		}
+	}
+	
+	public static void swap(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+	
+}

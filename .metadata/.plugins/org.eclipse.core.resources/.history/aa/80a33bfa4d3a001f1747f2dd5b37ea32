@@ -1,0 +1,49 @@
+package leetcode;
+
+import java.util.Iterator;
+import java.util.Stack;
+
+/**
+ * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
+ * The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+ * Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+ * Change the array nums such that the first k elements of nums contain the elements which are not equal to val. 
+ * The remaining elements of nums are not important as well as the size of nums.
+ * Return k.
+ * @author kelji
+ *
+ */
+public class RemoveElementFromArray {
+	
+	public int removeElement(int [] nums, int val) {
+		int leftOverCount = 0;
+		if ( nums == null ) {
+			return leftOverCount;
+		}
+		int numsCount = nums.length;
+		if ( numsCount < 1 ) {
+			leftOverCount = numsCount;
+		} else {
+			
+		}
+		return leftOverCount;
+	}
+	public static void main(String[] args) {
+		RemoveElementFromArray removeElementFromArray = new RemoveElementFromArray();
+		int [] nums =  {5,4,1,2,1,2,2,3,2,4};
+		int [] nums1 = {3,2,2,3};
+		int [] nums2 = {0,1,2,2,3,0,4,2};
+		int val = 2;
+		int val1 = 3;
+		int val2 = 2;
+		int leftOverCount = removeElementFromArray.removeElement(nums1, val1);
+		int numsCount = nums1.length;
+		System.out.println("New array");
+		for ( int i = 0; i < numsCount; i++ ) {
+			int currNum = nums1[i];
+			System.out.print(currNum + ", ");
+		}
+		System.out.println("\nLeft Overs Count: " + leftOverCount);
+	}
+
+}

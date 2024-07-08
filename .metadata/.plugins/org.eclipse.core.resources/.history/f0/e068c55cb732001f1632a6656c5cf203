@@ -1,0 +1,9 @@
+package com.f8.test;
+
+public class StreamsEx {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

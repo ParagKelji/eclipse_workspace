@@ -1,0 +1,32 @@
+package leetcode;
+
+public class LongestCommonPrefix {
+	
+	public String longestCommonPrefix(String[] strs) {
+        String lCPre = "";
+        int wordsCnt = 0;
+        if ( strs != null ) {
+        	wordsCnt = strs.length;
+        }
+        String prefix = strs[0];
+        int firstWordLen = (prefix != null ) ? prefix.length() : 0;
+        if ( firstWordLen > 0 ) {
+	        for ( int i = 0; i < firstWordLen; i++ ) {
+		        char fWChar = prefix.charAt(i);
+		        if ( wordsCnt > 1 ) {
+			        for ( int j = 1; j < wordsCnt; j++ ) {
+			        	String currWord = strs[j];
+			        	
+			        }
+		        }
+	        }
+        }
+        return lCPre;
+    }
+	
+	public static void main(String[] args) {
+		String[] strs = {"flower","flow","flight"};
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+let name = 'Parag';
+let isApproved = true;
+let person = {
+	firstName : 'Parag',
+	lastName : 'Kelji',
+	age : 30
+}
+console.log(person);

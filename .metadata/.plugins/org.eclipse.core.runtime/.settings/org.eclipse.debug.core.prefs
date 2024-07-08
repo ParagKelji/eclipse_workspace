@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="leftTree.get(i)"/>\r\n    <expression enabled\="true" text\="rightTree.get(i)"/>\r\n    <expression enabled\="true" text\="str.matches(&quot;.*\\d.*&quot;)"/>\r\n    <expression enabled\="true" text\="currChar.charValue()"/>\r\n    <expression enabled\="true" text\="(int)(Math.random()*size)"/>\r\n    <expression enabled\="true" text\="list.size()"/>\r\n</watchExpressions>\r\n

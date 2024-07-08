@@ -1,0 +1,41 @@
+
+public class CustomStack {
+	
+	int length = 0;
+	Node head;
+	Node top;
+	Node bottom;
+	
+	public CustomStack() {
+		
+	}
+	
+	class Node {
+		int value;
+		Node next;
+		public Node(int value) {
+			this.value = value;
+			this.next = null;
+		}
+	}
+	
+	public Node peek() {
+		return this.top;
+	}
+	
+	public Node pop() {
+		if ( this.length <= 0 ) {
+			return null;
+		}
+		Node placeHolder = this.top;
+		this.top = this.top.next;
+		return placeHolder;
+	}
+	
+	public Node push(int value) {
+		Node newNode = new Node(value);
+		newNode.next = this.top;
+		
+		return newNode;
+	}
+}

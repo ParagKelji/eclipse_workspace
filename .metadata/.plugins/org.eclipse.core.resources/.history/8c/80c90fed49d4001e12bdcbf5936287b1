@@ -1,0 +1,9 @@
+var logger = require('./logger');
+
+function sayHello(name) {
+	console.log(name);
+	console.log(logger);
+}
+logger.log("Say Hello to: ")
+sayHello('Parag');
+console.log(module);

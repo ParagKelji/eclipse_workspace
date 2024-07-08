@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author kelji
+ *
+ */
+module KafkaPractice {
+}

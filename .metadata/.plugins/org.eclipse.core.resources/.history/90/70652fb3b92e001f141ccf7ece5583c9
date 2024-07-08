@@ -1,0 +1,42 @@
+package com.f8.test;
+
+import java.util.function.BiFunction;
+
+public class MethodReference {
+	class Arithmetic {
+		public static int add(int a, int b) {
+			return a + b;
+		}
+		public static String getSumInString(int a, int b) {
+			String value = "";
+			int sum = a + b;
+			switch(sum) {
+				case 1:
+					value = "One";
+					break;
+				case 2:
+					value = "Two";
+					break;
+				case 3:
+					value = "Three";
+					break;
+				case 4:
+					value = "Four";
+					break;
+					
+				default:
+					value = "Five";
+					break;
+			}
+			return value;
+		}
+	}
+	
+	public static void main(String[] args) {
+		BiFunction<Integer, Integer, Integer>adder = Arithmetic::add;
+		BiFunction<Integer, Integer, String>adderString = Arithmetic::getSumInString;
+		int result = adder.apply(10, 20);
+		System.out.println(result);
+	}
+
+}

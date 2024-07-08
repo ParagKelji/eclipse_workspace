@@ -1,0 +1,14 @@
+package leetcode;
+
+public class JumpGame_1 {
+	
+	public boolean canJump(int[] nums) {
+        
+    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

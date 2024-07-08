@@ -1,0 +1,75 @@
+package com.f8.test;
+
+import java.util.function.BiFunction;
+
+public class MethodReference {
+	class Arithmetic {
+		public static int add(int a, int b) {
+			return a + b;
+		}
+		public static String getSumInString(int a, int b) {
+			String value = "";
+			int sum = a + b;
+			System.out.println("Sum is: " + sum);
+			value = convertNumToString(sum);
+			return value;
+		}
+		
+		private static String convertNumToString(int sum) {
+			String value;
+			switch(sum) {
+				case 1:
+					value = "One";
+					break;
+				case 2:
+					value = "Two";
+					break;
+				case 3:
+					value = "Three";
+					break;
+				case 4:
+					value = "Four";
+					break;
+				case 5:
+					value = "Five";
+					break;
+				case 6:
+					value = "Six";
+					break;
+				case 7:
+					value = "Seven";
+					break;
+				case 8:
+					value = "Eight";
+					break;
+				case 9:
+					value = "Nine";
+					break;
+				case 0:
+					value = "Zero";
+					break;
+				default:
+					if (sum > 10) {
+						int num1 = sum % 10;
+						int num2 = sum / 10;
+						System.out.println(num1);
+						System.out.println(num2);
+						value = convertNumToString(num2) + " " + convertNumToString(num1);
+					}
+					value = "";
+					break;
+			}
+			return value;
+		}
+	}
+	
+	public static void main(String[] args) {
+		BiFunction<Integer, Integer, Integer>adder = Arithmetic::add;
+		BiFunction<Integer, Integer, String>adderString = Arithmetic::getSumInString;
+		int result = adder.apply(10, 20);
+		System.out.println(result);
+		String resultString = adderString.apply(10, 20);
+		System.out.println(resultString);
+	}
+
+}
