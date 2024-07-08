@@ -29,7 +29,7 @@ public class AddTwoNumsLL {
         	sum.val = l2.val;
         	return sum;
         }
-        if ( l2.next == null ) {
+        if ( l2 == null ) {
         	sum.val = l1.val;
         	return sum;
         }
@@ -80,8 +80,8 @@ public class AddTwoNumsLL {
 		AddTwoNumsLL.ListNode num23 = addTwoNumsLL.new ListNode(4);
 		num21.next = num22;
 		num22.next = num23;
-		ListNode sum = addTwoNumsLL.addTwoNumbers(num11, num21);
-		System.out.println(sum);
+		//ListNode sum = addTwoNumsLL.addTwoNumbers(num11, num21);
+		//System.out.println(sum);
 		
 		AddTwoNumsLL.ListNode num31 = addTwoNumsLL.new ListNode(9);
 		AddTwoNumsLL.ListNode num32 = addTwoNumsLL.new ListNode(9);
@@ -105,8 +105,12 @@ public class AddTwoNumsLL {
 		num42.next = num43;
 		num43.next = num44;
 		System.out.println(num41);
-		ListNode sum2 = addTwoNumsLL.addTwoNumbers(num31, num41);
-		System.out.println(sum2);
+		//ListNode sum2 = addTwoNumsLL.addTwoNumbers(num31, num41);
+		//System.out.println(sum2);
+		AddTwoNumsLL.ListNode num5 = addTwoNumsLL.new ListNode(0);
+		AddTwoNumsLL.ListNode num6 = addTwoNumsLL.new ListNode(1);
+		ListNode sum3 = addTwoNumsLL.addTwoNumbers(num5, num6);
+		System.out.println(sum3);
 	}
 
 }
