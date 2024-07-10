@@ -128,7 +128,6 @@ public class MaxSubArray {
 		int start = 0;
 		boolean currSumReset = false;
 		for ( int i = 0; i < nums.length; i++ ) {
-			
 			currSum += nums[i];
 			if ( currSum < 0 ) {
 				currSumReset = true;
