@@ -1,4 +1,4 @@
-package $com.pkelji.kafka;
+//package com.pkelji.kafka;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
